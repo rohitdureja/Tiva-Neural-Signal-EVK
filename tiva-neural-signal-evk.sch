@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.05" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -12429,6 +12429,12 @@ Neural Signal EVK</text>
 <text x="375.92" y="177.8" size="1.778" layer="97" rot="R90" align="center">GPIO</text>
 <text x="279.4" y="205.74" size="1.778" layer="97" rot="R90" align="center">DEBUG</text>
 <text x="279.4" y="233.68" size="1.778" layer="97" rot="R90" align="center">DEBUG</text>
+<text x="294.64" y="232.41" size="1.27" layer="97" align="center">PA0/U0RX_VCP_TXD</text>
+<text x="294.64" y="229.87" size="1.27" layer="97" align="center">PA1/U0TX_VCP_RXD</text>
+<text x="292.735" y="207.01" size="1.27" layer="97" align="center">PC0/TCK/SWCLK</text>
+<text x="292.735" y="204.47" size="1.27" layer="97" align="center">PC1/TMS/SWDIO</text>
+<text x="289.56" y="201.93" size="1.27" layer="97" align="center">PC2/TDI</text>
+<text x="292.1" y="199.39" size="1.27" layer="97" align="center">PC3/TDO/SWO</text>
 </plain>
 <instances>
 <instance part="IC1" gate="A" x="332.74" y="198.12"/>
@@ -12952,6 +12958,7 @@ Neural Signal EVK</text>
 <pinref part="IC1" gate="A" pin="PA2"/>
 <wire x1="312.42" y1="226.06" x2="276.86" y2="226.06" width="0.1524" layer="91"/>
 <wire x1="276.86" y1="226.06" x2="274.32" y2="228.6" width="0.1524" layer="91"/>
+<label x="277.495" y="226.695" size="1.27" layer="95"/>
 </segment>
 </net>
 <net name="PA3" class="0">
@@ -12959,6 +12966,7 @@ Neural Signal EVK</text>
 <pinref part="IC1" gate="A" pin="PA3"/>
 <wire x1="312.42" y1="223.52" x2="276.86" y2="223.52" width="0.1524" layer="91"/>
 <wire x1="276.86" y1="223.52" x2="274.32" y2="226.06" width="0.1524" layer="91"/>
+<label x="277.495" y="224.155" size="1.27" layer="95"/>
 </segment>
 </net>
 <net name="PA4" class="0">
@@ -12966,6 +12974,7 @@ Neural Signal EVK</text>
 <pinref part="IC1" gate="A" pin="PA4"/>
 <wire x1="312.42" y1="220.98" x2="276.86" y2="220.98" width="0.1524" layer="91"/>
 <wire x1="276.86" y1="220.98" x2="274.32" y2="223.52" width="0.1524" layer="91"/>
+<label x="277.495" y="221.615" size="1.27" layer="95"/>
 </segment>
 </net>
 <net name="PA5" class="0">
@@ -12973,6 +12982,7 @@ Neural Signal EVK</text>
 <pinref part="IC1" gate="A" pin="PA5"/>
 <wire x1="312.42" y1="218.44" x2="276.86" y2="218.44" width="0.1524" layer="91"/>
 <wire x1="276.86" y1="218.44" x2="274.32" y2="220.98" width="0.1524" layer="91"/>
+<label x="277.495" y="219.075" size="1.27" layer="95"/>
 </segment>
 </net>
 <net name="PA6" class="0">
@@ -12980,6 +12990,7 @@ Neural Signal EVK</text>
 <pinref part="IC1" gate="A" pin="PA6"/>
 <wire x1="312.42" y1="215.9" x2="276.86" y2="215.9" width="0.1524" layer="91"/>
 <wire x1="276.86" y1="215.9" x2="274.32" y2="218.44" width="0.1524" layer="91"/>
+<label x="277.495" y="216.535" size="1.27" layer="95"/>
 </segment>
 </net>
 <net name="PA7" class="0">
@@ -12987,6 +12998,7 @@ Neural Signal EVK</text>
 <pinref part="IC1" gate="A" pin="PA7"/>
 <wire x1="312.42" y1="213.36" x2="276.86" y2="213.36" width="0.1524" layer="91"/>
 <wire x1="276.86" y1="213.36" x2="274.32" y2="215.9" width="0.1524" layer="91"/>
+<label x="277.495" y="213.995" size="1.27" layer="95"/>
 </segment>
 </net>
 <net name="PC4" class="0">
@@ -12994,6 +13006,7 @@ Neural Signal EVK</text>
 <pinref part="IC1" gate="A" pin="PC4"/>
 <wire x1="312.42" y1="195.58" x2="276.86" y2="195.58" width="0.1524" layer="91"/>
 <wire x1="276.86" y1="195.58" x2="274.32" y2="198.12" width="0.1524" layer="91"/>
+<label x="277.495" y="196.215" size="1.27" layer="95"/>
 </segment>
 </net>
 <net name="PC5" class="0">
@@ -13001,6 +13014,7 @@ Neural Signal EVK</text>
 <pinref part="IC1" gate="A" pin="PC5"/>
 <wire x1="312.42" y1="193.04" x2="276.86" y2="193.04" width="0.1524" layer="91"/>
 <wire x1="276.86" y1="193.04" x2="274.32" y2="195.58" width="0.1524" layer="91"/>
+<label x="277.495" y="193.675" size="1.27" layer="95"/>
 </segment>
 </net>
 <net name="PC6" class="0">
@@ -13008,6 +13022,7 @@ Neural Signal EVK</text>
 <pinref part="IC1" gate="A" pin="PC6"/>
 <wire x1="312.42" y1="190.5" x2="276.86" y2="190.5" width="0.1524" layer="91"/>
 <wire x1="276.86" y1="190.5" x2="274.32" y2="193.04" width="0.1524" layer="91"/>
+<label x="277.495" y="191.135" size="1.27" layer="95"/>
 </segment>
 </net>
 <net name="PC7" class="0">
@@ -13015,6 +13030,7 @@ Neural Signal EVK</text>
 <pinref part="IC1" gate="A" pin="PC7"/>
 <wire x1="312.42" y1="187.96" x2="276.86" y2="187.96" width="0.1524" layer="91"/>
 <wire x1="276.86" y1="187.96" x2="274.32" y2="190.5" width="0.1524" layer="91"/>
+<label x="277.495" y="188.595" size="1.27" layer="95"/>
 </segment>
 </net>
 <net name="PE0" class="0">
@@ -13022,6 +13038,7 @@ Neural Signal EVK</text>
 <pinref part="IC1" gate="A" pin="PE0"/>
 <wire x1="312.42" y1="177.8" x2="276.86" y2="177.8" width="0.1524" layer="91"/>
 <wire x1="276.86" y1="177.8" x2="274.32" y2="180.34" width="0.1524" layer="91"/>
+<label x="277.495" y="178.435" size="1.27" layer="95"/>
 </segment>
 </net>
 <net name="PE1" class="0">
@@ -13029,6 +13046,7 @@ Neural Signal EVK</text>
 <pinref part="IC1" gate="A" pin="PE1"/>
 <wire x1="312.42" y1="175.26" x2="276.86" y2="175.26" width="0.1524" layer="91"/>
 <wire x1="276.86" y1="175.26" x2="274.32" y2="177.8" width="0.1524" layer="91"/>
+<label x="277.495" y="175.895" size="1.27" layer="95"/>
 </segment>
 </net>
 <net name="PE2" class="0">
@@ -13036,6 +13054,7 @@ Neural Signal EVK</text>
 <pinref part="IC1" gate="A" pin="PE2"/>
 <wire x1="312.42" y1="172.72" x2="276.86" y2="172.72" width="0.1524" layer="91"/>
 <wire x1="276.86" y1="172.72" x2="274.32" y2="175.26" width="0.1524" layer="91"/>
+<label x="277.495" y="173.355" size="1.27" layer="95"/>
 </segment>
 </net>
 <net name="PE3" class="0">
@@ -13043,6 +13062,7 @@ Neural Signal EVK</text>
 <pinref part="IC1" gate="A" pin="PE3"/>
 <wire x1="312.42" y1="170.18" x2="276.86" y2="170.18" width="0.1524" layer="91"/>
 <wire x1="276.86" y1="170.18" x2="274.32" y2="172.72" width="0.1524" layer="91"/>
+<label x="277.495" y="170.815" size="1.27" layer="95"/>
 </segment>
 </net>
 <net name="PE4" class="0">
@@ -13050,6 +13070,7 @@ Neural Signal EVK</text>
 <pinref part="IC1" gate="A" pin="PE4"/>
 <wire x1="312.42" y1="167.64" x2="276.86" y2="167.64" width="0.1524" layer="91"/>
 <wire x1="276.86" y1="167.64" x2="274.32" y2="170.18" width="0.1524" layer="91"/>
+<label x="277.495" y="168.275" size="1.27" layer="95"/>
 </segment>
 </net>
 <net name="PE5" class="0">
@@ -13057,6 +13078,7 @@ Neural Signal EVK</text>
 <pinref part="IC1" gate="A" pin="PE5"/>
 <wire x1="312.42" y1="165.1" x2="276.86" y2="165.1" width="0.1524" layer="91"/>
 <wire x1="276.86" y1="165.1" x2="274.32" y2="167.64" width="0.1524" layer="91"/>
+<label x="277.495" y="165.735" size="1.27" layer="95"/>
 </segment>
 </net>
 <net name="PB0" class="0">
@@ -13064,6 +13086,7 @@ Neural Signal EVK</text>
 <pinref part="IC1" gate="A" pin="PB0"/>
 <wire x1="353.06" y1="231.14" x2="370.84" y2="231.14" width="0.1524" layer="91"/>
 <wire x1="370.84" y1="231.14" x2="373.38" y2="233.68" width="0.1524" layer="91"/>
+<label x="370.84" y="233.045" size="1.27" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="PB1" class="0">
@@ -13071,6 +13094,7 @@ Neural Signal EVK</text>
 <pinref part="IC1" gate="A" pin="PB1"/>
 <wire x1="353.06" y1="228.6" x2="370.84" y2="228.6" width="0.1524" layer="91"/>
 <wire x1="370.84" y1="228.6" x2="373.38" y2="231.14" width="0.1524" layer="91"/>
+<label x="370.84" y="230.505" size="1.27" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="PB2" class="0">
@@ -13078,6 +13102,7 @@ Neural Signal EVK</text>
 <pinref part="IC1" gate="A" pin="PB2"/>
 <wire x1="353.06" y1="226.06" x2="370.84" y2="226.06" width="0.1524" layer="91"/>
 <wire x1="370.84" y1="226.06" x2="373.38" y2="228.6" width="0.1524" layer="91"/>
+<label x="370.84" y="227.965" size="1.27" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="PB3" class="0">
@@ -13085,6 +13110,7 @@ Neural Signal EVK</text>
 <pinref part="IC1" gate="A" pin="PB3"/>
 <wire x1="353.06" y1="223.52" x2="370.84" y2="223.52" width="0.1524" layer="91"/>
 <wire x1="370.84" y1="223.52" x2="373.38" y2="226.06" width="0.1524" layer="91"/>
+<label x="370.84" y="225.425" size="1.27" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="PB4" class="0">
@@ -13092,6 +13118,7 @@ Neural Signal EVK</text>
 <pinref part="IC1" gate="A" pin="PB4"/>
 <wire x1="353.06" y1="220.98" x2="370.84" y2="220.98" width="0.1524" layer="91"/>
 <wire x1="370.84" y1="220.98" x2="373.38" y2="223.52" width="0.1524" layer="91"/>
+<label x="370.84" y="222.885" size="1.27" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="PB5" class="0">
@@ -13099,6 +13126,7 @@ Neural Signal EVK</text>
 <pinref part="IC1" gate="A" pin="PB5"/>
 <wire x1="353.06" y1="218.44" x2="370.84" y2="218.44" width="0.1524" layer="91"/>
 <wire x1="370.84" y1="218.44" x2="373.38" y2="220.98" width="0.1524" layer="91"/>
+<label x="370.84" y="220.345" size="1.27" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="PB6" class="0">
@@ -13106,6 +13134,7 @@ Neural Signal EVK</text>
 <pinref part="IC1" gate="A" pin="PB6"/>
 <wire x1="353.06" y1="215.9" x2="370.84" y2="215.9" width="0.1524" layer="91"/>
 <wire x1="370.84" y1="215.9" x2="373.38" y2="218.44" width="0.1524" layer="91"/>
+<label x="370.84" y="217.805" size="1.27" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="PB7" class="0">
@@ -13113,6 +13142,7 @@ Neural Signal EVK</text>
 <pinref part="IC1" gate="A" pin="PB7"/>
 <wire x1="353.06" y1="213.36" x2="370.84" y2="213.36" width="0.1524" layer="91"/>
 <wire x1="370.84" y1="213.36" x2="373.38" y2="215.9" width="0.1524" layer="91"/>
+<label x="370.84" y="215.265" size="1.27" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="PD0" class="0">
@@ -13120,6 +13150,7 @@ Neural Signal EVK</text>
 <pinref part="IC1" gate="A" pin="PD0"/>
 <wire x1="353.06" y1="205.74" x2="370.84" y2="205.74" width="0.1524" layer="91"/>
 <wire x1="370.84" y1="205.74" x2="373.38" y2="208.28" width="0.1524" layer="91"/>
+<label x="370.84" y="207.645" size="1.27" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="PD1" class="0">
@@ -13127,6 +13158,7 @@ Neural Signal EVK</text>
 <pinref part="IC1" gate="A" pin="PD1"/>
 <wire x1="353.06" y1="203.2" x2="370.84" y2="203.2" width="0.1524" layer="91"/>
 <wire x1="370.84" y1="203.2" x2="373.38" y2="205.74" width="0.1524" layer="91"/>
+<label x="370.84" y="205.105" size="1.27" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="PD2" class="0">
@@ -13134,6 +13166,7 @@ Neural Signal EVK</text>
 <pinref part="IC1" gate="A" pin="PD2"/>
 <wire x1="353.06" y1="200.66" x2="370.84" y2="200.66" width="0.1524" layer="91"/>
 <wire x1="370.84" y1="200.66" x2="373.38" y2="203.2" width="0.1524" layer="91"/>
+<label x="370.84" y="202.565" size="1.27" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="PD3" class="0">
@@ -13141,6 +13174,7 @@ Neural Signal EVK</text>
 <pinref part="IC1" gate="A" pin="PD3"/>
 <wire x1="353.06" y1="198.12" x2="370.84" y2="198.12" width="0.1524" layer="91"/>
 <wire x1="370.84" y1="198.12" x2="373.38" y2="200.66" width="0.1524" layer="91"/>
+<label x="370.84" y="200.025" size="1.27" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="PD6" class="0">
@@ -13148,6 +13182,7 @@ Neural Signal EVK</text>
 <pinref part="IC1" gate="A" pin="PD6"/>
 <wire x1="353.06" y1="190.5" x2="370.84" y2="190.5" width="0.1524" layer="91"/>
 <wire x1="370.84" y1="190.5" x2="373.38" y2="193.04" width="0.1524" layer="91"/>
+<label x="370.84" y="192.405" size="1.27" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="PD7" class="0">
@@ -13155,6 +13190,7 @@ Neural Signal EVK</text>
 <pinref part="IC1" gate="A" pin="PD7"/>
 <wire x1="353.06" y1="187.96" x2="370.84" y2="187.96" width="0.1524" layer="91"/>
 <wire x1="370.84" y1="187.96" x2="373.38" y2="190.5" width="0.1524" layer="91"/>
+<label x="370.84" y="189.865" size="1.27" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="PF0" class="0">
@@ -13162,6 +13198,7 @@ Neural Signal EVK</text>
 <pinref part="IC1" gate="A" pin="PF0"/>
 <wire x1="353.06" y1="177.8" x2="370.84" y2="177.8" width="0.1524" layer="91"/>
 <wire x1="370.84" y1="177.8" x2="373.38" y2="180.34" width="0.1524" layer="91"/>
+<label x="370.84" y="179.705" size="1.27" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="PF1" class="0">
@@ -13169,6 +13206,7 @@ Neural Signal EVK</text>
 <pinref part="IC1" gate="A" pin="PF1"/>
 <wire x1="353.06" y1="175.26" x2="370.84" y2="175.26" width="0.1524" layer="91"/>
 <wire x1="370.84" y1="175.26" x2="373.38" y2="177.8" width="0.1524" layer="91"/>
+<label x="370.84" y="177.165" size="1.27" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="PF2" class="0">
@@ -13176,6 +13214,7 @@ Neural Signal EVK</text>
 <pinref part="IC1" gate="A" pin="PF2"/>
 <wire x1="353.06" y1="172.72" x2="370.84" y2="172.72" width="0.1524" layer="91"/>
 <wire x1="370.84" y1="172.72" x2="373.38" y2="175.26" width="0.1524" layer="91"/>
+<label x="370.84" y="174.625" size="1.27" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="PF3" class="0">
@@ -13183,6 +13222,7 @@ Neural Signal EVK</text>
 <pinref part="IC1" gate="A" pin="PF3"/>
 <wire x1="353.06" y1="170.18" x2="370.84" y2="170.18" width="0.1524" layer="91"/>
 <wire x1="370.84" y1="170.18" x2="373.38" y2="172.72" width="0.1524" layer="91"/>
+<label x="370.84" y="172.085" size="1.27" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="PF4" class="0">
@@ -13190,6 +13230,7 @@ Neural Signal EVK</text>
 <pinref part="IC1" gate="A" pin="PF4"/>
 <wire x1="353.06" y1="167.64" x2="370.84" y2="167.64" width="0.1524" layer="91"/>
 <wire x1="370.84" y1="167.64" x2="373.38" y2="170.18" width="0.1524" layer="91"/>
+<label x="370.84" y="169.545" size="1.27" layer="95" rot="R180"/>
 </segment>
 </net>
 </nets>
