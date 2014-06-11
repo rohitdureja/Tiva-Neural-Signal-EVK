@@ -2819,8 +2819,8 @@ design rules under a new name.</description>
 <element name="!HIB!" library="testpad" package="B1,27" value="TPB1,27" x="-40.64" y="-96.52">
 <attribute name="TP_SIGNAL_NAME" value="" x="-40.64" y="-96.52" size="1.778" layer="27" display="off"/>
 </element>
-<element name="S1" library="mor307" package="6MM_SWITCH" value="" x="-48.26" y="-91.44"/>
-<element name="R3" library="rcl" package="R0603" value="1M" x="-50.8" y="-100.33"/>
+<element name="S1" library="mor307" package="6MM_SWITCH" value="RESET" x="-48.26" y="-91.44"/>
+<element name="R3" library="rcl" package="R0603" value="10k" x="-50.8" y="-100.33"/>
 <element name="RESET" library="testpad" package="B1,27" value="TPB1,27" x="-52.07" y="-106.68">
 <attribute name="TP_SIGNAL_NAME" value="" x="-52.07" y="-106.68" size="1.778" layer="27" display="off"/>
 </element>
@@ -3005,6 +3005,129 @@ design rules under a new name.</description>
 <wire x1="-51.562" y1="-93.726" x2="-49.95" y2="-100.33" width="0" layer="19" extent="1-1"/>
 <wire x1="-44.958" y1="-93.726" x2="-51.562" y2="-93.726" width="0" layer="19" extent="1-1"/>
 <wire x1="-14.72" y1="6.37" x2="-44.958" y2="-93.726" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="PC3">
+<contactref element="IC1" pad="49"/>
+</signal>
+<signal name="PA0">
+<contactref element="IC1" pad="17"/>
+</signal>
+<signal name="PA1">
+<contactref element="IC1" pad="18"/>
+</signal>
+<signal name="PC0">
+<contactref element="IC1" pad="52"/>
+</signal>
+<signal name="PC1">
+<contactref element="IC1" pad="51"/>
+</signal>
+<signal name="PC2">
+<contactref element="IC1" pad="50"/>
+</signal>
+<signal name="PA2">
+<contactref element="IC1" pad="19"/>
+</signal>
+<signal name="PA3">
+<contactref element="IC1" pad="20"/>
+</signal>
+<signal name="PA4">
+<contactref element="IC1" pad="21"/>
+</signal>
+<signal name="PA5">
+<contactref element="IC1" pad="22"/>
+</signal>
+<signal name="PA6">
+<contactref element="IC1" pad="23"/>
+</signal>
+<signal name="PA7">
+<contactref element="IC1" pad="24"/>
+</signal>
+<signal name="PC4">
+<contactref element="IC1" pad="16"/>
+</signal>
+<signal name="PC5">
+<contactref element="IC1" pad="15"/>
+</signal>
+<signal name="PC6">
+<contactref element="IC1" pad="14"/>
+</signal>
+<signal name="PC7">
+<contactref element="IC1" pad="13"/>
+</signal>
+<signal name="PE0">
+<contactref element="IC1" pad="9"/>
+</signal>
+<signal name="PE1">
+<contactref element="IC1" pad="8"/>
+</signal>
+<signal name="PE2">
+<contactref element="IC1" pad="7"/>
+</signal>
+<signal name="PE3">
+<contactref element="IC1" pad="6"/>
+</signal>
+<signal name="PE4">
+<contactref element="IC1" pad="59"/>
+</signal>
+<signal name="PE5">
+<contactref element="IC1" pad="60"/>
+</signal>
+<signal name="PB0">
+<contactref element="IC1" pad="45"/>
+</signal>
+<signal name="PB1">
+<contactref element="IC1" pad="46"/>
+</signal>
+<signal name="PB2">
+<contactref element="IC1" pad="47"/>
+</signal>
+<signal name="PB3">
+<contactref element="IC1" pad="48"/>
+</signal>
+<signal name="PB4">
+<contactref element="IC1" pad="58"/>
+</signal>
+<signal name="PB5">
+<contactref element="IC1" pad="57"/>
+</signal>
+<signal name="PB6">
+<contactref element="IC1" pad="1"/>
+</signal>
+<signal name="PB7">
+<contactref element="IC1" pad="4"/>
+</signal>
+<signal name="PD0">
+<contactref element="IC1" pad="61"/>
+</signal>
+<signal name="PD1">
+<contactref element="IC1" pad="62"/>
+</signal>
+<signal name="PD2">
+<contactref element="IC1" pad="63"/>
+</signal>
+<signal name="PD3">
+<contactref element="IC1" pad="64"/>
+</signal>
+<signal name="PD6">
+<contactref element="IC1" pad="53"/>
+</signal>
+<signal name="PD7">
+<contactref element="IC1" pad="10"/>
+</signal>
+<signal name="PF0">
+<contactref element="IC1" pad="28"/>
+</signal>
+<signal name="PF1">
+<contactref element="IC1" pad="29"/>
+</signal>
+<signal name="PF2">
+<contactref element="IC1" pad="30"/>
+</signal>
+<signal name="PF3">
+<contactref element="IC1" pad="31"/>
+</signal>
+<signal name="PF4">
+<contactref element="IC1" pad="5"/>
 </signal>
 </signals>
 </board>
