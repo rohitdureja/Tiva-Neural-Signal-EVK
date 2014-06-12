@@ -342,6 +342,62 @@ For any queries, contact Rohit (rohit at seas dot upenn dot edu)</description>
 <text x="-4.572" y="-2.794" size="1.27" layer="51" ratio="10">3</text>
 <text x="3.556" y="-2.794" size="1.27" layer="51" ratio="10">4</text>
 </package>
+<package name="PUSH-PUSH">
+<description>&lt;b&gt;Micro-SD Push-Pull Type Socket&lt;/b&gt;</description>
+<wire x1="12" y1="15.25" x2="12" y2="4.2" width="0.1" layer="21"/>
+<wire x1="12" y1="4.2" x2="11.55" y2="4.2" width="0.1" layer="21"/>
+<wire x1="0.45" y1="4.2" x2="0" y2="4.2" width="0.1" layer="21"/>
+<wire x1="0" y1="4.2" x2="0" y2="15.2" width="0.1" layer="21"/>
+<wire x1="0" y1="15.25" x2="0" y2="15.2" width="0.1" layer="21"/>
+<wire x1="1.8" y1="0" x2="10.25" y2="0" width="0.1" layer="51"/>
+<wire x1="0.45" y1="4.2" x2="0.45" y2="4.15" width="0.1" layer="21"/>
+<wire x1="0.45" y1="4.15" x2="0.45" y2="1.8" width="0.1" layer="51"/>
+<wire x1="0.45" y1="1.8" x2="0.45" y2="1.35" width="0.1" layer="51"/>
+<wire x1="0.45" y1="1.35" x2="1.8" y2="0" width="0.1" layer="51" curve="94.405196"/>
+<wire x1="11.55" y1="4.2" x2="11.55" y2="1.3" width="0.1" layer="51"/>
+<wire x1="11.55" y1="1.3" x2="10.25" y2="0" width="0.1" layer="51" curve="-79.973772"/>
+<wire x1="0.45" y1="1.25" x2="11.5" y2="1.15" width="0.1" layer="51" curve="-19.834898"/>
+<wire x1="0.45" y1="1.8" x2="11.5" y2="1.7" width="0.1" layer="51" curve="-19.834898"/>
+<wire x1="0.45" y1="4.15" x2="0.45" y2="14.4" width="0.1" layer="51" style="shortdash"/>
+<wire x1="0.45" y1="14.4" x2="0.45" y2="14.405" width="0.1" layer="51" style="shortdash"/>
+<wire x1="9.25" y1="15.25" x2="10.65" y2="14.1" width="0.1" layer="51" curve="-92.083253"/>
+<wire x1="10.65" y1="14.05" x2="10.65" y2="8.6" width="0.1" layer="51" style="shortdash"/>
+<wire x1="11.55" y1="4.2" x2="11.55" y2="7.7" width="0.1" layer="51" style="shortdash"/>
+<wire x1="11.55" y1="7.7" x2="10.65" y2="8.6" width="0.1" layer="51" style="shortdash"/>
+<wire x1="1.1" y1="4.2" x2="1.1" y2="4.6" width="0.1" layer="21"/>
+<wire x1="1.1" y1="4.6" x2="2.2" y2="5.7" width="0.1" layer="21" curve="-90"/>
+<wire x1="2.2" y1="5.7" x2="8.5" y2="5.7" width="0.1" layer="21"/>
+<wire x1="8.5" y1="5.7" x2="9.5" y2="4.7" width="0.1" layer="21" curve="-90"/>
+<wire x1="9.5" y1="4.7" x2="9.5" y2="4.2" width="0.1" layer="21"/>
+<wire x1="1.1" y1="4.2" x2="0.4" y2="4.2" width="0.1" layer="21"/>
+<wire x1="11.6" y1="4.2" x2="9.5" y2="4.2" width="0.1" layer="21"/>
+<wire x1="0" y1="15.2" x2="0.7" y2="15.9" width="0.1" layer="21" style="shortdash" curve="-90"/>
+<wire x1="11.35" y1="15.9" x2="12" y2="15.25" width="0.1" layer="21" style="shortdash" curve="-90"/>
+<wire x1="11.3" y1="15.9" x2="0.7" y2="15.9" width="0.1" layer="21"/>
+<wire x1="9.25" y1="15.25" x2="1.3" y2="15.25" width="0.1" layer="51" style="shortdash"/>
+<wire x1="1.3" y1="15.25" x2="0.45" y2="14.4" width="0.1" layer="51" style="shortdash" curve="90"/>
+<smd name="C1" x="0.1" y="4.3" dx="1.2" dy="1.75" layer="1"/>
+<smd name="8" x="1.45" y="4.3" dx="0.6" dy="2" layer="1"/>
+<smd name="7" x="2.55" y="4.3" dx="0.6" dy="2" layer="1"/>
+<smd name="6" x="3.65" y="4.3" dx="0.6" dy="2" layer="1"/>
+<smd name="5" x="4.75" y="4.3" dx="0.6" dy="2" layer="1"/>
+<smd name="4" x="5.85" y="4.3" dx="0.6" dy="2" layer="1"/>
+<smd name="2" x="8.05" y="4.3" dx="0.6" dy="2" layer="1"/>
+<smd name="1" x="9.15" y="4.3" dx="0.6" dy="2" layer="1"/>
+<smd name="3" x="6.95" y="4.3" dx="0.6" dy="2" layer="1"/>
+<smd name="C2" x="11.6" y="4.3" dx="1.4" dy="1.75" layer="1"/>
+<smd name="GND2" x="0" y="12.2" dx="0.8" dy="1.4" layer="1"/>
+<smd name="CD2" x="0.2" y="14" dx="1.55" dy="1" layer="1"/>
+<smd name="GND3" x="11.95" y="12.85" dx="0.8" dy="1.3" layer="1"/>
+<smd name="CD1" x="11.55" y="15.4" dx="1.75" dy="1" layer="1" rot="R90"/>
+<text x="1.45" y="6.65" size="0.8128" layer="51" font="vector">Micro SD Card</text>
+<text x="0" y="19.05" size="1.27" layer="25">&gt;NAME</text>
+<text x="-0.1" y="17.31" size="1.27" layer="27">&gt;VALUE</text>
+<wire x1="12.7" y1="16.6" x2="12.7" y2="2.6" width="0.127" layer="51"/>
+<wire x1="12.7" y1="2.6" x2="-0.9" y2="2.6" width="0.127" layer="51"/>
+<wire x1="-0.9" y1="2.6" x2="-0.9" y2="16.6" width="0.127" layer="51"/>
+<wire x1="-0.9" y1="16.6" x2="12.7" y2="16.6" width="0.127" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="TM4C123G_IO">
@@ -479,6 +535,23 @@ For any queries, contact Rohit (rohit at seas dot upenn dot edu)</description>
 <pin name="S1" x="2.54" y="5.08" visible="pad" length="short" direction="pas" swaplevel="1" rot="R270"/>
 <pin name="P1" x="2.54" y="-5.08" visible="pad" length="short" direction="pas" swaplevel="2" rot="R90"/>
 </symbol>
+<symbol name="USD-SOCKET">
+<description>&lt;b&gt;Amphenol microSD Push-Pull type Socket&lt;/b&gt;&lt;br /&gt; &lt;AUTHOR&gt;Rohit Dureja&lt;/AUTHOR&gt;&lt;COPYRIGHT&gt; June 2014 &lt;/COPYRIGHT&gt;</description>
+<wire x1="-7.62" y1="12.7" x2="7.62" y2="12.7" width="0.254" layer="94"/>
+<wire x1="7.62" y1="12.7" x2="7.62" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-10.16" x2="-7.62" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-10.16" x2="-7.62" y2="12.7" width="0.254" layer="94"/>
+<pin name="CS/DAT3" x="-12.7" y="7.62" length="middle" direction="in"/>
+<pin name="DI/CMD" x="-12.7" y="5.08" length="middle" direction="in"/>
+<pin name="GND" x="-12.7" y="-7.62" length="middle" direction="pwr"/>
+<pin name="VCC" x="-12.7" y="-5.08" length="middle" direction="pwr"/>
+<pin name="SCLK/CLK" x="-12.7" y="0" length="middle" direction="in"/>
+<pin name="NC/DAT1" x="-12.7" y="-2.54" length="middle" direction="pas"/>
+<pin name="DO/DAT0" x="-12.7" y="2.54" length="middle" direction="out"/>
+<pin name="NC/DAT2" x="-12.7" y="10.16" length="middle" direction="pas"/>
+<text x="-7.62" y="13.97" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-12.7" size="1.778" layer="95">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="TM4C123G" prefix="IC">
@@ -614,6 +687,30 @@ Manufacturer: FCI</description>
 <connect gate="2" pin="P1" pad="2"/>
 <connect gate="2" pin="S" pad="3"/>
 <connect gate="2" pin="S1" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MICROSD" prefix="X">
+<description>&lt;b&gt;Amphenol Micro SD Push-Push Type Connector &lt;/b&gt;&lt;br&gt;
+Part No: - 114-00841-68-1-ND</description>
+<gates>
+<gate name="G$1" symbol="USD-SOCKET" x="0" y="0" addlevel="always"/>
+</gates>
+<devices>
+<device name="" package="PUSH-PUSH">
+<connects>
+<connect gate="G$1" pin="CS/DAT3" pad="2"/>
+<connect gate="G$1" pin="DI/CMD" pad="3"/>
+<connect gate="G$1" pin="DO/DAT0" pad="7"/>
+<connect gate="G$1" pin="GND" pad="6"/>
+<connect gate="G$1" pin="NC/DAT1" pad="8"/>
+<connect gate="G$1" pin="NC/DAT2" pad="1"/>
+<connect gate="G$1" pin="SCLK/CLK" pad="5"/>
+<connect gate="G$1" pin="VCC" pad="4"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -12415,6 +12512,10 @@ This is the "EZ" version, which has limited top masking for improved ease of ass
 <part name="R3" library="rcl" deviceset="R-US_" device="R0603" value="10k"/>
 <part name="+3V2" library="supply1" deviceset="+3V3" device=""/>
 <part name="RESET" library="testpad" deviceset="TP" device="B1,27"/>
+<part name="X2" library="mor307" deviceset="MICROSD" device=""/>
+<part name="C17" library="rcl" deviceset="C-EU" device="C0603" value="0.1uF"/>
+<part name="SUPPLY12" library="supply2" deviceset="GND" device=""/>
+<part name="+3V4" library="supply1" deviceset="+3V3" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -12435,6 +12536,7 @@ Neural Signal EVK</text>
 <text x="292.735" y="204.47" size="1.27" layer="97" align="center">PC1/TMS/SWDIO</text>
 <text x="289.56" y="201.93" size="1.27" layer="97" align="center">PC2/TDI</text>
 <text x="292.1" y="199.39" size="1.27" layer="97" align="center">PC3/TDO/SWO</text>
+<text x="313.055" y="125.73" size="1.778" layer="97" rot="R90" align="center">GPIO</text>
 </plain>
 <instances>
 <instance part="IC1" gate="A" x="332.74" y="198.12"/>
@@ -12523,6 +12625,12 @@ Neural Signal EVK</text>
 <attribute name="NAME" x="149.86" y="242.57" size="1.778" layer="95"/>
 <attribute name="TP_SIGNAL_NAME" x="153.67" y="240.03" size="1.778" layer="97"/>
 </instance>
+<instance part="X2" gate="G$1" x="353.06" y="121.92"/>
+<instance part="C17" gate="G$1" x="330.2" y="106.68" rot="R90"/>
+<instance part="SUPPLY12" gate="GND" x="337.82" y="96.52"/>
+<instance part="+3V4" gate="G$1" x="325.12" y="96.52" smashed="yes" rot="R180">
+<attribute name="VALUE" x="322.58" y="93.98" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 <bus name="PA0,PA1,PC0,PC1,PC2,PC3">
@@ -12542,6 +12650,11 @@ Neural Signal EVK</text>
 <wire x1="271.78" y1="233.68" x2="274.32" y2="231.14" width="0.762" layer="92"/>
 <wire x1="274.32" y1="231.14" x2="274.32" y2="162.56" width="0.762" layer="92"/>
 <wire x1="274.32" y1="162.56" x2="276.86" y2="160.02" width="0.762" layer="92"/>
+</segment>
+<segment>
+<wire x1="312.42" y1="137.16" x2="314.96" y2="134.62" width="0.762" layer="92"/>
+<wire x1="314.96" y1="134.62" x2="314.96" y2="116.84" width="0.762" layer="92"/>
+<wire x1="314.96" y1="116.84" x2="317.5" y2="114.3" width="0.762" layer="92"/>
 </segment>
 </bus>
 </busses>
@@ -12683,6 +12796,16 @@ Neural Signal EVK</text>
 <wire x1="129.54" y1="223.52" x2="129.54" y2="222.25" width="0.1524" layer="91"/>
 <wire x1="129.54" y1="222.25" x2="127" y2="222.25" width="0.1524" layer="91"/>
 <junction x="127" y="222.25"/>
+</segment>
+<segment>
+<pinref part="X2" gate="G$1" pin="GND"/>
+<wire x1="340.36" y1="114.3" x2="337.82" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="337.82" y1="114.3" x2="337.82" y2="106.68" width="0.1524" layer="91"/>
+<pinref part="C17" gate="G$1" pin="2"/>
+<wire x1="337.82" y1="106.68" x2="335.28" y2="106.68" width="0.1524" layer="91"/>
+<pinref part="SUPPLY12" gate="GND" pin="GND"/>
+<wire x1="337.82" y1="106.68" x2="337.82" y2="99.06" width="0.1524" layer="91"/>
+<junction x="337.82" y="106.68"/>
 </segment>
 </net>
 <net name="VDDC" class="0">
@@ -12874,6 +12997,16 @@ Neural Signal EVK</text>
 <pinref part="R3" gate="G$1" pin="1"/>
 <pinref part="+3V2" gate="G$1" pin="+3V3"/>
 <wire x1="139.7" y1="223.52" x2="139.7" y2="220.98" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="X2" gate="G$1" pin="VCC"/>
+<wire x1="340.36" y1="116.84" x2="325.12" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="325.12" y1="116.84" x2="325.12" y2="106.68" width="0.1524" layer="91"/>
+<pinref part="C17" gate="G$1" pin="1"/>
+<wire x1="325.12" y1="106.68" x2="327.66" y2="106.68" width="0.1524" layer="91"/>
+<pinref part="+3V4" gate="G$1" pin="+3V3"/>
+<wire x1="325.12" y1="106.68" x2="325.12" y2="99.06" width="0.1524" layer="91"/>
+<junction x="325.12" y="106.68"/>
 </segment>
 </net>
 <net name="!HIB!" class="0">
@@ -13200,6 +13333,12 @@ Neural Signal EVK</text>
 <wire x1="370.84" y1="177.8" x2="373.38" y2="180.34" width="0.1524" layer="91"/>
 <label x="370.84" y="179.705" size="1.27" layer="95" rot="R180"/>
 </segment>
+<segment>
+<pinref part="X2" gate="G$1" pin="DO/DAT0"/>
+<wire x1="340.36" y1="124.46" x2="317.5" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="317.5" y1="124.46" x2="314.96" y2="127" width="0.1524" layer="91"/>
+<label x="318.77" y="125.095" size="1.27" layer="95"/>
+</segment>
 </net>
 <net name="PF1" class="0">
 <segment>
@@ -13207,6 +13346,12 @@ Neural Signal EVK</text>
 <wire x1="353.06" y1="175.26" x2="370.84" y2="175.26" width="0.1524" layer="91"/>
 <wire x1="370.84" y1="175.26" x2="373.38" y2="177.8" width="0.1524" layer="91"/>
 <label x="370.84" y="177.165" size="1.27" layer="95" rot="R180"/>
+</segment>
+<segment>
+<pinref part="X2" gate="G$1" pin="DI/CMD"/>
+<wire x1="340.36" y1="127" x2="317.5" y2="127" width="0.1524" layer="91"/>
+<wire x1="317.5" y1="127" x2="314.96" y2="129.54" width="0.1524" layer="91"/>
+<label x="318.77" y="127.635" size="1.27" layer="95"/>
 </segment>
 </net>
 <net name="PF2" class="0">
@@ -13216,6 +13361,12 @@ Neural Signal EVK</text>
 <wire x1="370.84" y1="172.72" x2="373.38" y2="175.26" width="0.1524" layer="91"/>
 <label x="370.84" y="174.625" size="1.27" layer="95" rot="R180"/>
 </segment>
+<segment>
+<pinref part="X2" gate="G$1" pin="SCLK/CLK"/>
+<wire x1="340.36" y1="121.92" x2="317.5" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="317.5" y1="121.92" x2="314.96" y2="124.46" width="0.1524" layer="91"/>
+<label x="318.77" y="122.555" size="1.27" layer="95"/>
+</segment>
 </net>
 <net name="PF3" class="0">
 <segment>
@@ -13223,6 +13374,12 @@ Neural Signal EVK</text>
 <wire x1="353.06" y1="170.18" x2="370.84" y2="170.18" width="0.1524" layer="91"/>
 <wire x1="370.84" y1="170.18" x2="373.38" y2="172.72" width="0.1524" layer="91"/>
 <label x="370.84" y="172.085" size="1.27" layer="95" rot="R180"/>
+</segment>
+<segment>
+<pinref part="X2" gate="G$1" pin="CS/DAT3"/>
+<wire x1="340.36" y1="129.54" x2="317.5" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="317.5" y1="129.54" x2="314.96" y2="132.08" width="0.1524" layer="91"/>
+<label x="318.77" y="130.175" size="1.27" layer="95"/>
 </segment>
 </net>
 <net name="PF4" class="0">
