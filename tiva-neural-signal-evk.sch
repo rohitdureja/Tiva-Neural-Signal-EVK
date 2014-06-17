@@ -12628,6 +12628,93 @@ This is the "EZ" version, which has limited top masking for improved ease of ass
 </deviceset>
 </devicesets>
 </library>
+<library name="ng">
+<description>Neil Gershenfeld's library</description>
+<packages>
+<package name="SMT_PINS_2">
+<wire x1="-2.54" y1="2.54" x2="-2.54" y2="0" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="0" x2="2.54" y2="0" width="0.127" layer="21"/>
+<wire x1="2.54" y1="0" x2="2.54" y2="2.54" width="0.127" layer="21"/>
+<wire x1="2.54" y1="2.54" x2="-2.54" y2="2.54" width="0.127" layer="21"/>
+<smd name="1" x="0" y="0" dx="5.08" dy="0.635" layer="1"/>
+<smd name="2" x="0" y="2.54" dx="5.08" dy="0.635" layer="1"/>
+<text x="-2.54" y="-2.54" size="1.27" layer="25">&gt;NAME</text>
+</package>
+<package name="MICRO_2">
+<smd name="1" x="-0.635" y="1.6256" dx="0.7874" dy="1.3462" layer="1"/>
+<smd name="2" x="0.635" y="1.6256" dx="0.7874" dy="1.3462" layer="1"/>
+<text x="-1.016" y="-0.635" size="1.27" layer="21">1</text>
+<text x="0.254" y="-0.635" size="1.27" layer="21">2</text>
+<rectangle x1="-4.191" y1="-2.667" x2="-2.159" y2="0.127" layer="1"/>
+<rectangle x1="2.159" y1="-2.667" x2="4.191" y2="0.127" layer="1"/>
+</package>
+<package name="SCREW_2">
+<wire x1="-2.54" y1="2.032" x2="-2.54" y2="-4.318" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="-4.318" x2="2.54" y2="-4.318" width="0.127" layer="21"/>
+<wire x1="2.54" y1="-4.318" x2="2.54" y2="2.032" width="0.127" layer="21"/>
+<wire x1="2.54" y1="2.032" x2="-2.54" y2="2.032" width="0.127" layer="21"/>
+<circle x="-1.27" y="1.27" radius="0.127" width="1.016" layer="21"/>
+<circle x="1.27" y="1.27" radius="0.1016" width="1.016" layer="21"/>
+<pad name="1" x="-1.27" y="-1.27" drill="1.4" diameter="2.1082"/>
+<pad name="2" x="1.27" y="-1.27" drill="1.4" diameter="2.1082"/>
+<text x="-2.54" y="-6.35" size="1.27" layer="25">&gt;NAME</text>
+<hole x="1.27" y="1.27" drill="1.5"/>
+<hole x="-1.27" y="1.27" drill="1.5"/>
+</package>
+</packages>
+<symbols>
+<symbol name="SMT_PINS_2">
+<wire x1="-5.08" y1="5.08" x2="-5.08" y2="-2.54" width="0.4064" layer="94"/>
+<wire x1="-5.08" y1="-2.54" x2="2.54" y2="-2.54" width="0.4064" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="2.54" y2="5.08" width="0.4064" layer="94"/>
+<wire x1="2.54" y1="5.08" x2="-5.08" y2="5.08" width="0.4064" layer="94"/>
+<wire x1="-2.54" y1="2.54" x2="-1.27" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-1.27" y2="0" width="0.254" layer="94"/>
+<circle x="0" y="0" radius="1.016" width="0.254" layer="94"/>
+<circle x="0" y="2.54" radius="1.016" width="0.254" layer="94"/>
+<text x="-5.08" y="6.35" size="1.9304" layer="95">&gt;NAME</text>
+<pin name="2" x="-2.54" y="2.54" visible="pad" length="point"/>
+<pin name="1" x="-2.54" y="0" visible="pad" length="point"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="2_PIN_HEADER">
+<description>2 SMT pin pads</description>
+<gates>
+<gate name="G$1" symbol="SMT_PINS_2" x="0" y="0"/>
+</gates>
+<devices>
+<device name="HEADER" package="SMT_PINS_2">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="MICRO" package="MICRO_2">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SCREW" package="SCREW_2">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -12764,6 +12851,10 @@ This is the "EZ" version, which has limited top masking for improved ease of ass
 <part name="R32" library="rcl" deviceset="R-US_" device="R0603" value="1M"/>
 <part name="R33" library="rcl" deviceset="R-US_" device="R0603" value="1M"/>
 <part name="C35" library="rcl" deviceset="C-EU" device="C0603"/>
+<part name="U$1" library="ng" deviceset="2_PIN_HEADER" device="HEADER"/>
+<part name="U$2" library="ng" deviceset="2_PIN_HEADER" device="HEADER"/>
+<part name="U$3" library="ng" deviceset="2_PIN_HEADER" device="HEADER"/>
+<part name="U$4" library="ng" deviceset="2_PIN_HEADER" device="HEADER"/>
 </parts>
 <sheets>
 <sheet>
@@ -12834,9 +12925,9 @@ Neural Signal EVK</text>
 <attribute name="NAME" x="113.03" y="195.326" size="1.778" layer="95"/>
 <attribute name="VALUE" x="110.49" y="187.96" size="1.778" layer="96"/>
 </instance>
-<instance part="Y2" gate="G$1" x="142.24" y="175.26" smashed="yes">
-<attribute name="NAME" x="140.97" y="177.546" size="1.778" layer="95"/>
-<attribute name="VALUE" x="135.89" y="170.18" size="1.778" layer="96"/>
+<instance part="Y2" gate="G$1" x="142.24" y="175.26" smashed="yes" rot="R180">
+<attribute name="NAME" x="143.51" y="172.974" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="148.59" y="180.34" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="C13" gate="G$1" x="134.62" y="185.42" rot="R90"/>
 <instance part="C14" gate="G$1" x="147.32" y="185.42" rot="R90"/>
@@ -13073,6 +13164,10 @@ Neural Signal EVK</text>
 <attribute name="VALUE" x="171.45" y="42.418" size="1.778" layer="96"/>
 </instance>
 <instance part="C35" gate="G$1" x="171.45" y="53.34" rot="R90"/>
+<instance part="U$1" gate="G$1" x="10.16" y="119.38" rot="R180"/>
+<instance part="U$2" gate="G$1" x="10.16" y="101.6" rot="MR0"/>
+<instance part="U$3" gate="G$1" x="10.16" y="81.28" rot="R180"/>
+<instance part="U$4" gate="G$1" x="10.16" y="63.5" rot="MR0"/>
 </instances>
 <busses>
 <bus name="PA0,PA1,PC0,PC1,PC2,PC3">
@@ -13372,8 +13467,8 @@ Neural Signal EVK</text>
 <wire x1="154.94" y1="185.42" x2="152.4" y2="185.42" width="0.1524" layer="91"/>
 <wire x1="154.94" y1="185.42" x2="154.94" y2="175.26" width="0.1524" layer="91"/>
 <junction x="154.94" y="185.42"/>
-<pinref part="Y2" gate="G$1" pin="2"/>
-<wire x1="154.94" y1="175.26" x2="144.78" y2="175.26" width="0.1524" layer="91"/>
+<pinref part="Y2" gate="G$1" pin="1"/>
+<wire x1="144.78" y1="175.26" x2="154.94" y2="175.26" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$7" class="0">
@@ -13397,8 +13492,8 @@ Neural Signal EVK</text>
 <wire x1="129.54" y1="185.42" x2="132.08" y2="185.42" width="0.1524" layer="91"/>
 <wire x1="129.54" y1="185.42" x2="129.54" y2="175.26" width="0.1524" layer="91"/>
 <junction x="129.54" y="185.42"/>
-<pinref part="Y2" gate="G$1" pin="1"/>
-<wire x1="129.54" y1="175.26" x2="139.7" y2="175.26" width="0.1524" layer="91"/>
+<pinref part="Y2" gate="G$1" pin="2"/>
+<wire x1="139.7" y1="175.26" x2="129.54" y2="175.26" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$9" class="0">
@@ -14324,7 +14419,7 @@ Neural Signal EVK</text>
 <junction x="182.88" y="152.4"/>
 </segment>
 </net>
-<net name="N$21" class="0">
+<net name="V1A" class="0">
 <segment>
 <pinref part="IC4" gate="G$1" pin="OUTB"/>
 <wire x1="162.56" y1="149.86" x2="167.64" y2="149.86" width="0.1524" layer="91"/>
@@ -14333,8 +14428,12 @@ Neural Signal EVK</text>
 <wire x1="167.64" y1="152.4" x2="170.18" y2="152.4" width="0.1524" layer="91"/>
 <pinref part="C32" gate="G$1" pin="1"/>
 <wire x1="171.45" y1="160.02" x2="167.64" y2="160.02" width="0.1524" layer="91"/>
-<wire x1="167.64" y1="160.02" x2="167.64" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="160.02" x2="167.64" y2="156.21" width="0.1524" layer="91"/>
 <junction x="167.64" y="152.4"/>
+<wire x1="167.64" y1="156.21" x2="167.64" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="156.21" x2="198.12" y2="156.21" width="0.1524" layer="91"/>
+<junction x="167.64" y="156.21"/>
+<label x="198.12" y="156.21" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$23" class="0">
@@ -14365,7 +14464,7 @@ Neural Signal EVK</text>
 <pinref part="IC5" gate="G$1" pin="INB-"/>
 </segment>
 </net>
-<net name="N$25" class="0">
+<net name="V1B" class="0">
 <segment>
 <wire x1="162.56" y1="119.38" x2="167.64" y2="119.38" width="0.1524" layer="91"/>
 <wire x1="167.64" y1="119.38" x2="167.64" y2="121.92" width="0.1524" layer="91"/>
@@ -14373,9 +14472,13 @@ Neural Signal EVK</text>
 <wire x1="167.64" y1="121.92" x2="170.18" y2="121.92" width="0.1524" layer="91"/>
 <pinref part="C33" gate="G$1" pin="1"/>
 <wire x1="171.45" y1="129.54" x2="167.64" y2="129.54" width="0.1524" layer="91"/>
-<wire x1="167.64" y1="129.54" x2="167.64" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="129.54" x2="167.64" y2="125.73" width="0.1524" layer="91"/>
 <junction x="167.64" y="121.92"/>
 <pinref part="IC5" gate="G$1" pin="OUTB"/>
+<wire x1="167.64" y1="125.73" x2="167.64" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="125.73" x2="198.12" y2="125.73" width="0.1524" layer="91"/>
+<junction x="167.64" y="125.73"/>
+<label x="198.12" y="125.73" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="VOA2" class="0">
@@ -14457,7 +14560,7 @@ Neural Signal EVK</text>
 <pinref part="IC7" gate="G$1" pin="INB-"/>
 </segment>
 </net>
-<net name="N$27" class="0">
+<net name="V2A" class="0">
 <segment>
 <wire x1="160.02" y1="73.66" x2="165.1" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="165.1" y1="73.66" x2="165.1" y2="76.2" width="0.1524" layer="91"/>
@@ -14465,9 +14568,13 @@ Neural Signal EVK</text>
 <wire x1="165.1" y1="76.2" x2="167.64" y2="76.2" width="0.1524" layer="91"/>
 <pinref part="C34" gate="G$1" pin="1"/>
 <wire x1="168.91" y1="83.82" x2="165.1" y2="83.82" width="0.1524" layer="91"/>
-<wire x1="165.1" y1="83.82" x2="165.1" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="83.82" x2="165.1" y2="80.01" width="0.1524" layer="91"/>
 <junction x="165.1" y="76.2"/>
 <pinref part="IC7" gate="G$1" pin="OUTB"/>
+<wire x1="165.1" y1="80.01" x2="165.1" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="80.01" x2="195.58" y2="80.01" width="0.1524" layer="91"/>
+<junction x="165.1" y="80.01"/>
+<label x="195.58" y="80.01" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$28" class="0">
@@ -14498,7 +14605,7 @@ Neural Signal EVK</text>
 <pinref part="IC8" gate="G$1" pin="INB-"/>
 </segment>
 </net>
-<net name="N$30" class="0">
+<net name="V2B" class="0">
 <segment>
 <wire x1="160.02" y1="43.18" x2="165.1" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="165.1" y1="43.18" x2="165.1" y2="45.72" width="0.1524" layer="91"/>
@@ -14506,9 +14613,85 @@ Neural Signal EVK</text>
 <wire x1="165.1" y1="45.72" x2="167.64" y2="45.72" width="0.1524" layer="91"/>
 <pinref part="C35" gate="G$1" pin="1"/>
 <wire x1="168.91" y1="53.34" x2="165.1" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="165.1" y1="53.34" x2="165.1" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="53.34" x2="165.1" y2="49.53" width="0.1524" layer="91"/>
 <junction x="165.1" y="45.72"/>
 <pinref part="IC8" gate="G$1" pin="OUTB"/>
+<wire x1="165.1" y1="49.53" x2="165.1" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="49.53" x2="195.58" y2="49.53" width="0.1524" layer="91"/>
+<junction x="165.1" y="49.53"/>
+<label x="195.58" y="49.53" size="1.778" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="N$21" class="0">
+<segment>
+<pinref part="IC3" gate="G$1" pin="VINA-"/>
+<wire x1="58.42" y1="134.62" x2="17.78" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="134.62" x2="17.78" y2="119.38" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="1"/>
+<wire x1="17.78" y1="119.38" x2="12.7" y2="119.38" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$25" class="0">
+<segment>
+<pinref part="IC3" gate="G$1" pin="VINA+"/>
+<wire x1="58.42" y1="132.08" x2="20.32" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="132.08" x2="20.32" y2="116.84" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="2"/>
+<wire x1="20.32" y1="116.84" x2="12.7" y2="116.84" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$27" class="0">
+<segment>
+<pinref part="IC6" gate="G$1" pin="VINB-"/>
+<wire x1="55.88" y1="48.26" x2="17.78" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="48.26" x2="17.78" y2="63.5" width="0.1524" layer="91"/>
+<pinref part="U$4" gate="G$1" pin="1"/>
+<wire x1="17.78" y1="63.5" x2="12.7" y2="63.5" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$30" class="0">
+<segment>
+<pinref part="IC6" gate="G$1" pin="VINB+"/>
+<wire x1="55.88" y1="50.8" x2="20.32" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="50.8" x2="20.32" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="U$4" gate="G$1" pin="2"/>
+<wire x1="20.32" y1="66.04" x2="12.7" y2="66.04" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$31" class="0">
+<segment>
+<pinref part="IC3" gate="G$1" pin="VINB+"/>
+<wire x1="58.42" y1="127" x2="22.86" y2="127" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="127" x2="22.86" y2="104.14" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="2"/>
+<wire x1="22.86" y1="104.14" x2="12.7" y2="104.14" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$32" class="0">
+<segment>
+<pinref part="IC3" gate="G$1" pin="VINB-"/>
+<wire x1="58.42" y1="124.46" x2="25.4" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="124.46" x2="25.4" y2="101.6" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="1"/>
+<wire x1="25.4" y1="101.6" x2="12.7" y2="101.6" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$33" class="0">
+<segment>
+<pinref part="IC6" gate="G$1" pin="VINA-"/>
+<wire x1="55.88" y1="58.42" x2="25.4" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="58.42" x2="25.4" y2="81.28" width="0.1524" layer="91"/>
+<pinref part="U$3" gate="G$1" pin="1"/>
+<wire x1="25.4" y1="81.28" x2="12.7" y2="81.28" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$34" class="0">
+<segment>
+<pinref part="IC6" gate="G$1" pin="VINA+"/>
+<wire x1="55.88" y1="55.88" x2="22.86" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="55.88" x2="22.86" y2="78.74" width="0.1524" layer="91"/>
+<pinref part="U$3" gate="G$1" pin="2"/>
+<wire x1="22.86" y1="78.74" x2="12.7" y2="78.74" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
