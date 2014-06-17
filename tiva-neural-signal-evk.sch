@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.05" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -12723,6 +12723,8 @@ This is the "EZ" version, which has limited top masking for improved ease of ass
 <classes>
 <class number="0" name="default" width="0" drill="0">
 </class>
+<class number="1" name="power" width="0.254" drill="0">
+</class>
 </classes>
 <parts>
 <part name="IC1" library="mor307" deviceset="TM4C123G" device=""/>
@@ -13220,7 +13222,7 @@ Neural Signal EVK</text>
 <label x="33.02" y="233.68" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="GND" class="0">
+<net name="GND" class="1">
 <segment>
 <pinref part="C1" gate="G$1" pin="2"/>
 <pinref part="SUPPLY1" gate="GND" pin="GND"/>
@@ -13544,7 +13546,7 @@ Neural Signal EVK</text>
 <label x="215.9" y="226.06" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="+3V3" class="0">
+<net name="+3V3" class="1">
 <segment>
 <pinref part="IC1" gate="B" pin="VDD@1"/>
 <wire x1="200.66" y1="198.12" x2="203.2" y2="198.12" width="0.1524" layer="91"/>
