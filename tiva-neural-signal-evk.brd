@@ -2728,17 +2728,24 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </package>
 </packages>
 </library>
-<library name="ng">
-<description>Neil Gershenfeld's library</description>
+<library name="pinhead">
+<description>&lt;b&gt;Pin Header Connectors&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
 <packages>
-<package name="SMT_PINS_2">
-<wire x1="-2.54" y1="2.54" x2="-2.54" y2="0" width="0.127" layer="21"/>
-<wire x1="-2.54" y1="0" x2="2.54" y2="0" width="0.127" layer="21"/>
-<wire x1="2.54" y1="0" x2="2.54" y2="2.54" width="0.127" layer="21"/>
-<wire x1="2.54" y1="2.54" x2="-2.54" y2="2.54" width="0.127" layer="21"/>
-<smd name="1" x="0" y="0" dx="5.08" dy="0.635" layer="1"/>
-<smd name="2" x="0" y="2.54" dx="5.08" dy="0.635" layer="1"/>
-<text x="-2.54" y="-2.54" size="1.27" layer="25">&gt;NAME</text>
+<package name="1X01">
+<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
+<wire x1="-0.635" y1="1.27" x2="0.635" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="1.27" x2="1.27" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="0.635" x2="1.27" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="-0.635" x2="0.635" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="0.635" x2="-1.27" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="1.27" x2="-1.27" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="-0.635" x2="-0.635" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="-1.27" x2="-0.635" y2="-1.27" width="0.1524" layer="21"/>
+<pad name="1" x="0" y="0" drill="1.016" shape="octagon"/>
+<text x="-1.3462" y="1.8288" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-1.27" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
 </package>
 </packages>
 </library>
@@ -2924,16 +2931,10 @@ Min trace width, spacing, drill size and dimension clearance for Advanced Circui
 <element name="IC1" library="mor307" package="LQFP64" value="TM4C123G" x="30.48" y="19.05" rot="R315"/>
 <element name="X1" library="mor307" package="USB-MICROB" value="USB" x="48.895" y="32.385" rot="R90"/>
 <element name="IC2" library="mor307" package="SOT23-5" value="TLV70233" x="38.481" y="31.877" rot="R90"/>
-<element name="VBUS" library="testpad" package="B1,27" value="TPB1,27" x="40.259" y="29.21">
-<attribute name="TP_SIGNAL_NAME" value="" x="56.769" y="1.27" size="1.778" layer="27" display="off"/>
-</element>
 <element name="C1" library="resistor" package="C0603" value="1.0uF" x="42.291" y="31.877" rot="R90"/>
 <element name="C2" library="resistor" package="C0603" value="1.0uF" x="38.1" y="27.305" rot="R180"/>
 <element name="LED1" library="led" package="CHIP-LED0603" value="" x="43.18" y="26.67"/>
 <element name="R1" library="rcl" package="R0603" value="330E" x="41.275" y="26.67" rot="R90"/>
-<element name="+3V3" library="testpad" package="B1,27" value="TPB1,27" x="37.592" y="29.21">
-<attribute name="TP_SIGNAL_NAME" value="" x="37.592" y="29.21" size="1.778" layer="27" display="off"/>
-</element>
 <element name="C3" library="rcl" package="C0603" value="" x="27.686" y="28.194" rot="R180"/>
 <element name="C4" library="rcl" package="C0603" value="" x="23.368" y="12.192" rot="R180"/>
 <element name="C5" library="rcl" package="C0603" value="" x="39.116" y="12.192" rot="R180"/>
@@ -2964,9 +2965,6 @@ Min trace width, spacing, drill size and dimension clearance for Advanced Circui
 </element>
 <element name="S1" library="mor307" package="6MM_SWITCH" value="RESET" x="46.99" y="5.334" rot="R90"/>
 <element name="R3" library="rcl" package="R0603" value="10k" x="42.418" y="9.525" rot="R90"/>
-<element name="RESET" library="testpad" package="B1,27" value="TPB1,27" x="46.863" y="11.176">
-<attribute name="TP_SIGNAL_NAME" value="" x="46.863" y="11.176" size="1.778" layer="27" display="off"/>
-</element>
 <element name="X2" library="mor307" package="PUSH-PUSH" value="MICROSD" x="53.34" y="25.4" rot="MR270"/>
 <element name="C17" library="rcl" package="C0603" value="0.1uF" x="45.847" y="27.178" rot="MR180"/>
 <element name="IC3" library="mor307" package="TSSOP16" value="INA2332" x="8.128" y="26.162"/>
@@ -3023,10 +3021,14 @@ Min trace width, spacing, drill size and dimension clearance for Advanced Circui
 <element name="R32" library="rcl" package="R0603" value="1M" x="13.589" y="10.414" rot="R270"/>
 <element name="R33" library="rcl" package="R0603" value="1M" x="18.034" y="10.16" rot="R180"/>
 <element name="C35" library="rcl" package="C0603" value="" x="18.034" y="11.43" rot="R180"/>
-<element name="U$1" library="ng" package="SMT_PINS_2" value="2_PIN_HEADERHEADER" x="1.397" y="30.734" rot="R180"/>
-<element name="U$2" library="ng" package="SMT_PINS_2" value="2_PIN_HEADERHEADER" x="1.397" y="25.654" rot="R180"/>
-<element name="U$3" library="ng" package="SMT_PINS_2" value="2_PIN_HEADERHEADER" x="1.27" y="16.637" rot="R180"/>
-<element name="U$4" library="ng" package="SMT_PINS_2" value="2_PIN_HEADERHEADER" x="1.27" y="11.43" rot="R180"/>
+<element name="REF1" library="pinhead" package="1X01" value="" x="2.159" y="31.115"/>
+<element name="SIG1" library="pinhead" package="1X01" value="" x="2.159" y="28.575"/>
+<element name="SIG2" library="pinhead" package="1X01" value="" x="2.159" y="21.209"/>
+<element name="REF2" library="pinhead" package="1X01" value="" x="2.159" y="23.749"/>
+<element name="REF3" library="pinhead" package="1X01" value="" x="2.159" y="16.637"/>
+<element name="SIG3" library="pinhead" package="1X01" value="" x="2.159" y="14.097"/>
+<element name="SIG4" library="pinhead" package="1X01" value="" x="2.159" y="6.858"/>
+<element name="REF4" library="pinhead" package="1X01" value="" x="2.159" y="9.398"/>
 </elements>
 <signals>
 <signal name="GND" class="1">
@@ -3125,11 +3127,9 @@ Min trace width, spacing, drill size and dimension clearance for Advanced Circui
 <contactref element="X1" pad="VBUS"/>
 <contactref element="IC2" pad="1"/>
 <contactref element="IC2" pad="3"/>
-<contactref element="VBUS" pad="TP"/>
 <contactref element="C1" pad="1"/>
 <wire x1="42.291" y1="31.027" x2="46.245" y2="31.085" width="0" layer="19" extent="1-1"/>
 <wire x1="39.7811" y1="30.927" x2="42.291" y2="31.027" width="0" layer="19" extent="1-1"/>
-<wire x1="40.259" y1="29.21" x2="39.7811" y2="30.927" width="0" layer="19" extent="1-1"/>
 <wire x1="39.7811" y1="32.827" x2="39.7811" y2="30.927" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VDDC">
@@ -3211,7 +3211,6 @@ Min trace width, spacing, drill size and dimension clearance for Advanced Circui
 <contactref element="IC2" pad="5"/>
 <contactref element="C2" pad="1"/>
 <contactref element="R1" pad="2"/>
-<contactref element="+3V3" pad="TP"/>
 <contactref element="R3" pad="1"/>
 <contactref element="X2" pad="4"/>
 <contactref element="C17" pad="1"/>
@@ -3238,9 +3237,8 @@ Min trace width, spacing, drill size and dimension clearance for Advanced Circui
 <contactref element="R30" pad="2"/>
 <wire x1="41.275" y1="27.52" x2="44.997" y2="27.178" width="0" layer="19" extent="1-16"/>
 <wire x1="38.95" y1="27.305" x2="41.275" y2="27.52" width="0" layer="19" extent="1-1"/>
-<wire x1="37.592" y1="29.21" x2="38.95" y2="27.305" width="0" layer="19" extent="1-1"/>
-<wire x1="37.1809" y1="30.927" x2="37.592" y2="29.21" width="0" layer="19" extent="1-1"/>
-<wire x1="35.648" y1="26.416" x2="37.592" y2="29.21" width="0" layer="19" extent="1-16"/>
+<wire x1="35.648" y1="26.416" x2="38.95" y2="27.305" width="0" layer="19" extent="1-16"/>
+<wire x1="37.1809" y1="30.927" x2="38.95" y2="27.305" width="0" layer="19" extent="1-1"/>
 <wire x1="35.32368125" y1="22.1259125" x2="35.648" y2="26.416" width="0" layer="19" extent="1-16"/>
 <wire x1="34.970125" y1="15.62053125" x2="35.32368125" y2="22.1259125" width="0" layer="19" extent="1-1"/>
 <wire x1="33.202359375" y1="13.8527625" x2="34.970125" y2="15.62053125" width="0" layer="19" extent="1-1"/>
@@ -3270,11 +3268,11 @@ Min trace width, spacing, drill size and dimension clearance for Advanced Circui
 <wire x1="11.153" y1="25.187" x2="18.415" y2="24.98" width="0" layer="19" extent="1-16"/>
 <wire x1="11.153" y1="27.137" x2="11.153" y2="25.187" width="0" layer="19" extent="1-1"/>
 <wire x1="8.382" y1="27.012" x2="11.153" y2="27.137" width="0" layer="19" extent="1-16"/>
-<wire x1="5.103" y1="23.887" x2="11.153" y2="25.187" width="0" layer="19" extent="1-1"/>
+<wire x1="5.103" y1="23.887" x2="8.382" y2="27.012" width="0" layer="19" extent="1-16"/>
 <wire x1="11.28" y1="13.04" x2="18.757" y2="12.319" width="0" layer="19" extent="1-16"/>
 <wire x1="11.28" y1="11.09" x2="11.28" y2="13.04" width="0" layer="19" extent="1-1"/>
 <wire x1="8.255" y1="13.169" x2="11.28" y2="13.04" width="0" layer="19" extent="1-16"/>
-<wire x1="5.23" y1="9.79" x2="11.28" y2="11.09" width="0" layer="19" extent="1-1"/>
+<wire x1="5.23" y1="9.79" x2="8.255" y2="13.169" width="0" layer="19" extent="1-16"/>
 <wire x1="49.04" y1="19.55" x2="44.997" y2="27.178" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="!HIB!">
@@ -3287,10 +3285,8 @@ Min trace width, spacing, drill size and dimension clearance for Advanced Circui
 <contactref element="R3" pad="2"/>
 <contactref element="S1" pad="3"/>
 <contactref element="S1" pad="4"/>
-<contactref element="RESET" pad="TP"/>
-<wire x1="46.863" y1="11.176" x2="49.276" y2="8.636" width="0" layer="19" extent="1-1"/>
-<wire x1="42.418" y1="10.375" x2="46.863" y2="11.176" width="0" layer="19" extent="1-1"/>
 <wire x1="49.276" y1="2.032" x2="49.276" y2="8.636" width="0" layer="19" extent="1-1"/>
+<wire x1="42.418" y1="10.375" x2="49.276" y2="8.636" width="0" layer="19" extent="1-1"/>
 <wire x1="33.5559125" y1="14.206315625" x2="42.418" y2="10.375" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PC3">
@@ -3343,15 +3339,39 @@ Min trace width, spacing, drill size and dimension clearance for Advanced Circui
 </signal>
 <signal name="PE0">
 <contactref element="IC1" pad="9"/>
+<contactref element="R33" pad="1"/>
+<contactref element="C35" pad="1"/>
+<contactref element="IC8" pad="7"/>
+<wire x1="18.884" y1="11.43" x2="26.343425" y2="22.83301875" width="0" layer="19" extent="1-1"/>
+<wire x1="18.884" y1="10.16" x2="18.884" y2="11.43" width="0" layer="19" extent="1-1"/>
+<wire x1="20.146" y1="7.946" x2="18.884" y2="10.16" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PE1">
 <contactref element="IC1" pad="8"/>
+<contactref element="R29" pad="1"/>
+<contactref element="C34" pad="1"/>
+<contactref element="IC7" pad="7"/>
+<wire x1="18.884" y1="17.907" x2="26.696978125" y2="23.186571875" width="0" layer="19" extent="1-1"/>
+<wire x1="18.884" y1="16.637" x2="18.884" y2="17.907" width="0" layer="19" extent="1-1"/>
+<wire x1="20.146" y1="14.296" x2="18.884" y2="16.637" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PE2">
 <contactref element="IC1" pad="7"/>
+<contactref element="R25" pad="1"/>
+<contactref element="C33" pad="1"/>
+<contactref element="IC5" pad="7"/>
+<wire x1="19.765" y1="22.043" x2="27.05053125" y2="23.540125" width="0" layer="19" extent="1-1"/>
+<wire x1="18.503" y1="24.257" x2="19.765" y2="22.043" width="0" layer="19" extent="1-1"/>
+<wire x1="18.503" y1="25.527" x2="18.503" y2="24.257" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PE3">
 <contactref element="IC1" pad="6"/>
+<contactref element="IC4" pad="7"/>
+<contactref element="R21" pad="1"/>
+<contactref element="C32" pad="1"/>
+<wire x1="19.765" y1="28.393" x2="27.404084375" y2="23.89368125" width="0" layer="19" extent="1-1"/>
+<wire x1="18.503" y1="30.607" x2="19.765" y2="28.393" width="0" layer="19" extent="1-1"/>
+<wire x1="18.503" y1="31.877" x2="18.503" y2="30.607" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PE4">
 <contactref element="IC1" pad="59"/>
@@ -3575,13 +3595,6 @@ Min trace width, spacing, drill size and dimension clearance for Advanced Circui
 <wire x1="13.208" y1="28.79" x2="16.803" y2="30.607" width="0" layer="19" extent="1-1"/>
 <wire x1="19.765" y1="27.743" x2="16.803" y2="30.607" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="V1A">
-<contactref element="IC4" pad="7"/>
-<contactref element="R21" pad="1"/>
-<contactref element="C32" pad="1"/>
-<wire x1="18.503" y1="31.877" x2="18.503" y2="30.607" width="0" layer="19" extent="1-1"/>
-<wire x1="19.765" y1="28.393" x2="18.503" y2="30.607" width="0" layer="19" extent="1-1"/>
-</signal>
 <signal name="N$23">
 <contactref element="R22" pad="1"/>
 <contactref element="R23" pad="2"/>
@@ -3597,13 +3610,6 @@ Min trace width, spacing, drill size and dimension clearance for Advanced Circui
 <wire x1="16.803" y1="24.257" x2="16.803" y2="25.527" width="0" layer="19" extent="1-1"/>
 <wire x1="13.208" y1="25.361" x2="16.803" y2="25.527" width="0" layer="19" extent="1-1"/>
 <wire x1="19.765" y1="21.393" x2="16.803" y2="24.257" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="V1B">
-<contactref element="R25" pad="1"/>
-<contactref element="C33" pad="1"/>
-<contactref element="IC5" pad="7"/>
-<wire x1="18.503" y1="24.257" x2="18.503" y2="25.527" width="0" layer="19" extent="1-1"/>
-<wire x1="19.765" y1="22.043" x2="18.503" y2="24.257" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VOA2">
 <contactref element="IC6" pad="13"/>
@@ -3643,13 +3649,6 @@ Min trace width, spacing, drill size and dimension clearance for Advanced Circui
 <wire x1="13.589" y1="14.693" x2="17.184" y2="16.637" width="0" layer="19" extent="1-1"/>
 <wire x1="20.146" y1="13.646" x2="17.184" y2="16.637" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="V2A">
-<contactref element="R29" pad="1"/>
-<contactref element="C34" pad="1"/>
-<contactref element="IC7" pad="7"/>
-<wire x1="18.884" y1="16.637" x2="18.884" y2="17.907" width="0" layer="19" extent="1-1"/>
-<wire x1="20.146" y1="14.296" x2="18.884" y2="16.637" width="0" layer="19" extent="1-1"/>
-</signal>
 <signal name="N$28">
 <contactref element="R30" pad="1"/>
 <contactref element="R31" pad="2"/>
@@ -3666,52 +3665,55 @@ Min trace width, spacing, drill size and dimension clearance for Advanced Circui
 <wire x1="13.589" y1="11.264" x2="17.184" y2="11.43" width="0" layer="19" extent="1-1"/>
 <wire x1="20.146" y1="7.296" x2="17.184" y2="10.16" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="V2B">
-<contactref element="R33" pad="1"/>
-<contactref element="C35" pad="1"/>
-<contactref element="IC8" pad="7"/>
-<wire x1="18.884" y1="11.43" x2="18.884" y2="10.16" width="0" layer="19" extent="1-1"/>
-<wire x1="20.146" y1="7.946" x2="18.884" y2="10.16" width="0" layer="19" extent="1-1"/>
-</signal>
 <signal name="N$21">
 <contactref element="IC3" pad="2"/>
-<contactref element="U$1" pad="1"/>
-<wire x1="1.397" y1="30.734" x2="5.103" y2="27.787" width="0" layer="19" extent="1-1"/>
+<contactref element="REF1" pad="1"/>
+<wire x1="2.159" y1="31.115" x2="5.103" y2="27.787" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$25">
 <contactref element="IC3" pad="3"/>
-<contactref element="U$1" pad="2"/>
-<wire x1="1.397" y1="28.194" x2="5.103" y2="27.137" width="0" layer="19" extent="1-1"/>
+<contactref element="SIG1" pad="1"/>
+<wire x1="2.159" y1="28.575" x2="5.103" y2="27.137" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$27">
 <contactref element="IC6" pad="6"/>
-<contactref element="U$4" pad="1"/>
-<wire x1="1.27" y1="11.43" x2="5.23" y2="11.09" width="0" layer="19" extent="1-1"/>
+<contactref element="REF4" pad="1"/>
+<wire x1="5.23" y1="11.09" x2="2.159" y2="9.398" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$30">
 <contactref element="IC6" pad="5"/>
-<contactref element="U$4" pad="2"/>
-<wire x1="1.27" y1="8.89" x2="5.23" y2="11.74" width="0" layer="19" extent="1-1"/>
+<contactref element="SIG4" pad="1"/>
+<wire x1="5.23" y1="11.74" x2="2.159" y2="6.858" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="N$31">
+<signal name="SIG2">
 <contactref element="IC3" pad="5"/>
-<contactref element="U$2" pad="2"/>
-<wire x1="1.397" y1="23.114" x2="5.103" y2="25.837" width="0" layer="19" extent="1-1"/>
+<contactref element="SIG2" pad="1"/>
+<wire x1="2.159" y1="21.209" x2="5.103" y2="25.837" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$32">
 <contactref element="IC3" pad="6"/>
-<contactref element="U$2" pad="1"/>
-<wire x1="1.397" y1="25.654" x2="5.103" y2="25.187" width="0" layer="19" extent="1-1"/>
+<contactref element="REF2" pad="1"/>
+<wire x1="2.159" y1="23.749" x2="5.103" y2="25.187" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$33">
 <contactref element="IC6" pad="2"/>
-<contactref element="U$3" pad="1"/>
-<wire x1="1.27" y1="16.637" x2="5.23" y2="13.69" width="0" layer="19" extent="1-1"/>
+<contactref element="REF3" pad="1"/>
+<wire x1="5.23" y1="13.69" x2="2.159" y2="16.637" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$34">
 <contactref element="IC6" pad="3"/>
-<contactref element="U$3" pad="2"/>
-<wire x1="1.27" y1="14.097" x2="5.23" y2="13.04" width="0" layer="19" extent="1-1"/>
+<contactref element="SIG3" pad="1"/>
+<wire x1="5.23" y1="13.04" x2="2.159" y2="14.097" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="USBDM">
+<contactref element="IC1" pad="43"/>
+<contactref element="X1" pad="D-"/>
+<wire x1="35.32368125" y1="15.974084375" x2="46.245" y2="31.735" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="USBDP">
+<contactref element="IC1" pad="44"/>
+<contactref element="X1" pad="D+"/>
+<wire x1="35.677234375" y1="16.3276375" x2="46.245" y2="32.385" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>
