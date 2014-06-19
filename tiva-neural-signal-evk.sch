@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.05" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -14177,6 +14177,7 @@ Get the latest version from &lt;a href="https://github.com/IndianTinker/CEDT-Eag
 <part name="CH3" library="SparkFun-Connectors" deviceset="M01" device="NOSILK-KIT"/>
 <part name="CH4" library="SparkFun-Connectors" deviceset="M01" device="NOSILK-KIT"/>
 <part name="JP8" library="SparkFun-Connectors" deviceset="M02" device="1X02_NO_SILK" value="M021X02_NO_SILK"/>
+<part name="CH5" library="SparkFun-Connectors" deviceset="M01" device="NOSILK-KIT"/>
 </parts>
 <sheets>
 <sheet>
@@ -14538,6 +14539,7 @@ Neural Signal EVK</text>
 <instance part="JP8" gate="G$1" x="323.85" y="81.28" smashed="yes">
 <attribute name="NAME" x="321.31" y="87.122" size="1.778" layer="95"/>
 </instance>
+<instance part="CH5" gate="G$1" x="152.4" y="247.65" rot="R270"/>
 </instances>
 <busses>
 <bus name="PA0,PA1,PC0,PC1,PC2,PC3">
@@ -15118,6 +15120,8 @@ Neural Signal EVK</text>
 <junction x="152.4" y="236.22"/>
 <wire x1="152.4" y1="236.22" x2="157.48" y2="236.22" width="0.1524" layer="91"/>
 <label x="157.48" y="236.22" size="1.778" layer="95" xref="yes"/>
+<wire x1="152.4" y1="236.22" x2="152.4" y2="240.03" width="0.1524" layer="91"/>
+<pinref part="CH5" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="PC3" class="0">
