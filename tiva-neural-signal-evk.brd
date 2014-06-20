@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.001" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.0005" altunitdist="inch" altunit="inch"/>
+<grid distance="0.001" unitdist="inch" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.0005" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -6375,7 +6375,7 @@ Min trace width, spacing, drill size and dimension clearance for Advanced Circui
 <attribute name="VALUE" x="7.874" y="16.002" size="1.27" layer="27"/>
 </element>
 <element name="R12" library="rcl" package="R0603" value="100k" x="5.334" y="7.239" smashed="yes" rot="R90">
-<attribute name="NAME" x="5.969" y="6.5024" size="1.27" layer="25" rot="R90"/>
+<attribute name="NAME" x="6.6294" y="6.4389" size="0.635" layer="25" rot="R90"/>
 <attribute name="VALUE" x="7.239" y="6.604" size="1.27" layer="27" rot="R90"/>
 </element>
 <element name="R13" library="rcl" package="R0603" value="100k" x="8.255" y="7.874" smashed="yes">
@@ -6499,35 +6499,35 @@ Min trace width, spacing, drill size and dimension clearance for Advanced Circui
 <attribute name="VALUE" x="18.669" y="13.335" size="1.27" layer="27" rot="R180"/>
 </element>
 <element name="REF1" library="pinhead" package="1X01" value="" x="2.159" y="31.115" smashed="yes">
-<attribute name="NAME" x="3.7846" y="31.6992" size="0.508" layer="25" ratio="10" rot="SR270"/>
+<attribute name="NAME" x="3.7592" y="32.0294" size="0.635" layer="25" ratio="10" rot="SR270"/>
 <attribute name="VALUE" x="0.889" y="27.94" size="1.27" layer="27"/>
 </element>
 <element name="SIG1" library="pinhead" package="1X01" value="" x="2.159" y="28.575" smashed="yes">
-<attribute name="NAME" x="3.7592" y="29.2608" size="0.508" layer="25" ratio="10" rot="SR270"/>
+<attribute name="NAME" x="3.7592" y="29.4894" size="0.635" layer="25" ratio="10" rot="SR270"/>
 <attribute name="VALUE" x="0.889" y="25.4" size="1.27" layer="27"/>
 </element>
 <element name="SIG2" library="pinhead" package="1X01" value="" x="2.159" y="21.209" smashed="yes">
-<attribute name="NAME" x="3.7084" y="22.0218" size="0.508" layer="25" ratio="10" rot="SR270"/>
+<attribute name="NAME" x="3.7592" y="22.1234" size="0.635" layer="25" ratio="10" rot="SR270"/>
 <attribute name="VALUE" x="0.889" y="18.034" size="1.27" layer="27"/>
 </element>
 <element name="REF2" library="pinhead" package="1X01" value="" x="2.159" y="23.749" smashed="yes">
-<attribute name="NAME" x="3.7084" y="24.6126" size="0.508" layer="25" ratio="10" rot="SR270"/>
+<attribute name="NAME" x="3.7846" y="24.9174" size="0.635" layer="25" ratio="10" rot="SR270"/>
 <attribute name="VALUE" x="0.889" y="20.574" size="1.27" layer="27"/>
 </element>
 <element name="REF3" library="pinhead" package="1X01" value="" x="2.159" y="16.637" smashed="yes">
-<attribute name="NAME" x="3.7338" y="17.4498" size="0.508" layer="25" ratio="10" rot="SR270"/>
+<attribute name="NAME" x="3.7592" y="17.653" size="0.635" layer="25" ratio="10" rot="SR270"/>
 <attribute name="VALUE" x="0.889" y="13.462" size="1.27" layer="27"/>
 </element>
 <element name="SIG3" library="pinhead" package="1X01" value="" x="2.159" y="14.097" smashed="yes">
-<attribute name="NAME" x="3.7338" y="14.8336" size="0.508" layer="25" ratio="10" rot="SR270"/>
+<attribute name="NAME" x="3.7592" y="14.9352" size="0.635" layer="25" ratio="10" rot="SR270"/>
 <attribute name="VALUE" x="0.889" y="10.922" size="1.27" layer="27"/>
 </element>
 <element name="SIG4" library="pinhead" package="1X01" value="" x="2.159" y="6.858" smashed="yes">
-<attribute name="NAME" x="3.7846" y="7.6454" size="0.508" layer="25" ratio="10" rot="SR270"/>
+<attribute name="NAME" x="3.7846" y="7.7216" size="0.635" layer="25" ratio="10" rot="SR270"/>
 <attribute name="VALUE" x="0.889" y="3.683" size="1.27" layer="27"/>
 </element>
 <element name="REF4" library="pinhead" package="1X01" value="" x="2.159" y="9.398" smashed="yes">
-<attribute name="NAME" x="3.7592" y="10.16" size="0.508" layer="25" ratio="10" rot="SR270"/>
+<attribute name="NAME" x="3.7592" y="10.3886" size="0.635" layer="25" ratio="10" rot="SR270"/>
 <attribute name="VALUE" x="0.889" y="6.223" size="1.27" layer="27"/>
 </element>
 <element name="LED0" library="led" package="CHIP-LED0603" value="" x="41.656" y="17.018" smashed="yes" rot="R90">
