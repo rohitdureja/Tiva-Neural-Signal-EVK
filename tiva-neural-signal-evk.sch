@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="6.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -14026,28 +14026,28 @@ Get the latest version from &lt;a href="https://github.com/IndianTinker/CEDT-Eag
 <part name="SUPPLY3" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY4" library="supply2" deviceset="GND" device=""/>
 <part name="PWR" library="led" deviceset="LED" device="CHIP-LED0603"/>
-<part name="R1" library="rcl" deviceset="R-US_" device="R0603" value="330E"/>
+<part name="R1" library="rcl" deviceset="R-US_" device="R0603" value="1K"/>
 <part name="SUPPLY5" library="supply2" deviceset="GND" device=""/>
 <part name="FRAME1" library="frames" deviceset="A3L-LOC" device=""/>
 <part name="SUPPLY6" library="supply2" deviceset="GND" device=""/>
-<part name="C3" library="rcl" deviceset="C-EU" device="C0603"/>
-<part name="C4" library="rcl" deviceset="C-EU" device="C0603"/>
-<part name="C5" library="rcl" deviceset="C-EU" device="C0603"/>
-<part name="C6" library="rcl" deviceset="C-EU" device="C0603"/>
-<part name="C7" library="rcl" deviceset="C-EU" device="C0603"/>
-<part name="C8" library="rcl" deviceset="C-EU" device="C0603"/>
+<part name="C3" library="rcl" deviceset="C-EU" device="C0603" value="0.1u"/>
+<part name="C4" library="rcl" deviceset="C-EU" device="C0603" value=".01u"/>
+<part name="C5" library="rcl" deviceset="C-EU" device="C0603" value="0.1u"/>
+<part name="C6" library="rcl" deviceset="C-EU" device="C0603" value="0.1u"/>
+<part name="C7" library="rcl" deviceset="C-EU" device="C0603" value="0.1u"/>
+<part name="C8" library="rcl" deviceset="C-EU" device="C0603" value="1.0u"/>
 <part name="SUPPLY7" library="supply2" deviceset="GND" device=""/>
-<part name="C9" library="rcl" deviceset="C-EU" device="C0603"/>
-<part name="C10" library="rcl" deviceset="C-EU" device="C0603"/>
-<part name="C11" library="rcl" deviceset="C-EU" device="C0603"/>
-<part name="C12" library="rcl" deviceset="C-EU" device="C0603"/>
+<part name="C9" library="rcl" deviceset="C-EU" device="C0603" value="0.1u"/>
+<part name="C10" library="rcl" deviceset="C-EU" device="C0603" value="1.0u"/>
+<part name="C11" library="rcl" deviceset="C-EU" device="C0603" value="2.2u"/>
+<part name="C12" library="rcl" deviceset="C-EU" device="C0603" value="0.1u"/>
 <part name="SUPPLY8" library="supply2" deviceset="GND" device=""/>
 <part name="Y1" library="SparkFun-FreqCtrl" deviceset="CRYSTAL" device="5X3" value="16MHz"/>
 <part name="Y2" library="SparkFun-FreqCtrl" deviceset="CRYSTAL" device="32-SMD" value="32.768kHz"/>
-<part name="C13" library="rcl" deviceset="C-EU" device="C0603"/>
-<part name="C14" library="rcl" deviceset="C-EU" device="C0603"/>
-<part name="C15" library="rcl" deviceset="C-EU" device="C0603"/>
-<part name="C16" library="rcl" deviceset="C-EU" device="C0603"/>
+<part name="C13" library="rcl" deviceset="C-EU" device="C0603" value="10p"/>
+<part name="C14" library="rcl" deviceset="C-EU" device="C0603" value="10p"/>
+<part name="C15" library="rcl" deviceset="C-EU" device="C0603" value="18p"/>
+<part name="C16" library="rcl" deviceset="C-EU" device="C0603" value="19p"/>
 <part name="SUPPLY9" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY10" library="supply2" deviceset="GND" device=""/>
 <part name="R2" library="rcl" deviceset="R-US_" device="R0603" value="1M"/>
@@ -14068,18 +14068,18 @@ Get the latest version from &lt;a href="https://github.com/IndianTinker/CEDT-Eag
 <part name="+3V5" library="supply1" deviceset="+3V3" device=""/>
 <part name="R4" library="rcl" deviceset="R-US_" device="R0603" value="100k"/>
 <part name="R5" library="rcl" deviceset="R-US_" device="R0603" value="100k"/>
-<part name="C19" library="rcl" deviceset="C-EU" device="C0603"/>
+<part name="C19" library="rcl" deviceset="C-EU" device="C0603" value="10p"/>
 <part name="R6" library="rcl" deviceset="R-US_" device="R0603" value="100k"/>
 <part name="R7" library="rcl" deviceset="R-US_" device="R0603" value="100k"/>
-<part name="C20" library="rcl" deviceset="C-EU" device="C0603"/>
+<part name="C20" library="rcl" deviceset="C-EU" device="C0603" value="10p"/>
 <part name="R8" library="rcl" deviceset="R-US_" device="R0603" value="1M"/>
-<part name="C21" library="rcl" deviceset="C-EU" device="C0603"/>
+<part name="C21" library="rcl" deviceset="C-EU" device="C0603" value="10n"/>
 <part name="R9" library="rcl" deviceset="R-US_" device="R0603" value="1M"/>
-<part name="C22" library="rcl" deviceset="C-EU" device="C0603"/>
-<part name="C23" library="rcl" deviceset="C-EU" device="C0603"/>
+<part name="C22" library="rcl" deviceset="C-EU" device="C0603" value="10n"/>
+<part name="C23" library="rcl" deviceset="C-EU" device="C0603" value="0.1u"/>
 <part name="SUPPLY14" library="supply2" deviceset="GND" device=""/>
 <part name="+3V6" library="supply1" deviceset="+3V3" device=""/>
-<part name="C24" library="rcl" deviceset="C-EU" device="C0603"/>
+<part name="C24" library="rcl" deviceset="C-EU" device="C0603" value="0.1u"/>
 <part name="SUPPLY15" library="supply2" deviceset="GND" device=""/>
 <part name="+3V7" library="supply1" deviceset="+3V3" device=""/>
 <part name="IC6" library="mor307" deviceset="INA2332" device=""/>
@@ -14090,52 +14090,52 @@ Get the latest version from &lt;a href="https://github.com/IndianTinker/CEDT-Eag
 <part name="+3V8" library="supply1" deviceset="+3V3" device=""/>
 <part name="R10" library="rcl" deviceset="R-US_" device="R0603" value="100k"/>
 <part name="R11" library="rcl" deviceset="R-US_" device="R0603" value="100k"/>
-<part name="C26" library="rcl" deviceset="C-EU" device="C0603"/>
+<part name="C26" library="rcl" deviceset="C-EU" device="C0603" value="10p"/>
 <part name="R12" library="rcl" deviceset="R-US_" device="R0603" value="100k"/>
 <part name="R13" library="rcl" deviceset="R-US_" device="R0603" value="100k"/>
-<part name="C27" library="rcl" deviceset="C-EU" device="C0603"/>
+<part name="C27" library="rcl" deviceset="C-EU" device="C0603" value="10p"/>
 <part name="R14" library="rcl" deviceset="R-US_" device="R0603" value="1M"/>
-<part name="C28" library="rcl" deviceset="C-EU" device="C0603"/>
+<part name="C28" library="rcl" deviceset="C-EU" device="C0603" value="10n"/>
 <part name="R15" library="rcl" deviceset="R-US_" device="R0603" value="1M"/>
-<part name="C29" library="rcl" deviceset="C-EU" device="C0603"/>
-<part name="C30" library="rcl" deviceset="C-EU" device="C0603"/>
+<part name="C29" library="rcl" deviceset="C-EU" device="C0603" value="10n"/>
+<part name="C30" library="rcl" deviceset="C-EU" device="C0603" value="0.1u"/>
 <part name="SUPPLY17" library="supply2" deviceset="GND" device=""/>
 <part name="+3V9" library="supply1" deviceset="+3V3" device=""/>
-<part name="C31" library="rcl" deviceset="C-EU" device="C0603"/>
+<part name="C31" library="rcl" deviceset="C-EU" device="C0603" value="0.1u"/>
 <part name="SUPPLY18" library="supply2" deviceset="GND" device=""/>
 <part name="+3V10" library="supply1" deviceset="+3V3" device=""/>
-<part name="R16" library="rcl" deviceset="R-US_" device="R0603" value="100k"/>
-<part name="R17" library="rcl" deviceset="R-US_" device="R0603" value="100k"/>
+<part name="R16" library="rcl" deviceset="R-US_" device="R0603" value="10k"/>
+<part name="R17" library="rcl" deviceset="R-US_" device="R0603" value="10k"/>
 <part name="SUPPLY19" library="supply2" deviceset="GND" device=""/>
 <part name="+3V11" library="supply1" deviceset="+3V3" device=""/>
-<part name="R18" library="rcl" deviceset="R-US_" device="R0603" value="1M"/>
-<part name="R19" library="rcl" deviceset="R-US_" device="R0603" value="1M"/>
+<part name="R18" library="rcl" deviceset="R-US_" device="R0603" value="10k"/>
+<part name="R19" library="rcl" deviceset="R-US_" device="R0603" value="10k"/>
 <part name="SUPPLY20" library="supply2" deviceset="GND" device=""/>
 <part name="+3V12" library="supply1" deviceset="+3V3" device=""/>
-<part name="R20" library="rcl" deviceset="R-US_" device="R0603" value="1M"/>
+<part name="R20" library="rcl" deviceset="R-US_" device="R0603" value="10k"/>
 <part name="R21" library="rcl" deviceset="R-US_" device="R0603" value="1M"/>
-<part name="C32" library="rcl" deviceset="C-EU" device="C0603"/>
-<part name="R22" library="rcl" deviceset="R-US_" device="R0603" value="1M"/>
-<part name="R23" library="rcl" deviceset="R-US_" device="R0603" value="1M"/>
+<part name="C32" library="rcl" deviceset="C-EU" device="C0603" value="22p"/>
+<part name="R22" library="rcl" deviceset="R-US_" device="R0603" value="10k"/>
+<part name="R23" library="rcl" deviceset="R-US_" device="R0603" value="10k"/>
 <part name="SUPPLY21" library="supply2" deviceset="GND" device=""/>
 <part name="+3V13" library="supply1" deviceset="+3V3" device=""/>
-<part name="R24" library="rcl" deviceset="R-US_" device="R0603" value="1M"/>
+<part name="R24" library="rcl" deviceset="R-US_" device="R0603" value="10k"/>
 <part name="R25" library="rcl" deviceset="R-US_" device="R0603" value="1M"/>
-<part name="C33" library="rcl" deviceset="C-EU" device="C0603"/>
-<part name="R26" library="rcl" deviceset="R-US_" device="R0603" value="1M"/>
-<part name="R27" library="rcl" deviceset="R-US_" device="R0603" value="1M"/>
+<part name="C33" library="rcl" deviceset="C-EU" device="C0603" value="22p"/>
+<part name="R26" library="rcl" deviceset="R-US_" device="R0603" value="10k"/>
+<part name="R27" library="rcl" deviceset="R-US_" device="R0603" value="10k"/>
 <part name="SUPPLY22" library="supply2" deviceset="GND" device=""/>
 <part name="+3V14" library="supply1" deviceset="+3V3" device=""/>
-<part name="R28" library="rcl" deviceset="R-US_" device="R0603" value="1M"/>
+<part name="R28" library="rcl" deviceset="R-US_" device="R0603" value="10k"/>
 <part name="R29" library="rcl" deviceset="R-US_" device="R0603" value="1M"/>
-<part name="C34" library="rcl" deviceset="C-EU" device="C0603"/>
-<part name="R30" library="rcl" deviceset="R-US_" device="R0603" value="1M"/>
-<part name="R31" library="rcl" deviceset="R-US_" device="R0603" value="1M"/>
+<part name="C34" library="rcl" deviceset="C-EU" device="C0603" value="22p"/>
+<part name="R30" library="rcl" deviceset="R-US_" device="R0603" value="10k"/>
+<part name="R31" library="rcl" deviceset="R-US_" device="R0603" value="10k"/>
 <part name="SUPPLY23" library="supply2" deviceset="GND" device=""/>
 <part name="+3V15" library="supply1" deviceset="+3V3" device=""/>
-<part name="R32" library="rcl" deviceset="R-US_" device="R0603" value="1M"/>
+<part name="R32" library="rcl" deviceset="R-US_" device="R0603" value="10k"/>
 <part name="R33" library="rcl" deviceset="R-US_" device="R0603" value="1M"/>
-<part name="C35" library="rcl" deviceset="C-EU" device="C0603"/>
+<part name="C35" library="rcl" deviceset="C-EU" device="C0603" value="22p"/>
 <part name="REF1" library="pinhead" deviceset="PINHD-1X1" device=""/>
 <part name="SIG1" library="pinhead" deviceset="PINHD-1X1" device=""/>
 <part name="SIG2" library="pinhead" deviceset="PINHD-1X1" device=""/>
